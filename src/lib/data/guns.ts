@@ -123,4 +123,10 @@ export const guns: { [name: string]: Gun } = {
 	auga3: { name: "AUG A3", type: GUN_TYPE.smg },
 	p10roni: { name: "P10 Roni", type: GUN_TYPE.smg },
 	gonne6: { name: "Gonne-6", type: GUN_TYPE.gonne6 },
+	pmr90a2: { name: "PMR90A2", type: GUN_TYPE.smg },
+	tacit45: { name: "TACIT .45", type: GUN_TYPE.pistol },
+	glaive12: { name: "Glaive-12", type: GUN_TYPE.shotgun },
+	reaperMk2: { name: "Reaper MK2", type: GUN_TYPE.shotgun },
+	_44vendetta: { name: ".44 Vendetta", type: GUN_TYPE.pistol },
+	pcx33: { name: "PCX-33", type: GUN_TYPE.rifle },
 }

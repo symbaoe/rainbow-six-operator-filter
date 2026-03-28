@@ -4,10 +4,9 @@
 	import { createEventDispatcher, onDestroy, onMount } from "svelte"
 	import { fade } from "svelte/transition"
 	import { gunNotes } from "$lib/util/gun_notes"
-	import { roles, sides, gunTypes, scopes, gadgets } from "$lib/data/typenames"
+	import { roles, sides, gunTypes, gadgets } from "$lib/data/typenames"
 	import { SIDE, type Link, type Operator } from "$lib/data/types"
 	import IconExternalLink from "$lib/components/IconExternalLink.svelte"
-	import IconScope from "$lib/components/IconScope.svelte"
 
 	export let operator: Operator
 
@@ -129,18 +128,16 @@
 										<div class="weapon">
 											<div class="weapon-type">{gunTypes[gun.gun.type]}</div>
 											<div class="weapon-name">{gun.gun.name}</div>
+											{#if gun.gun.note}
 											<div class="weapon-scope">
-												<IconScope />
-												{scopes[gun.maxScope]}
-												{#if gun.gun.note}
-													<span
-														class="weapon-note"
-														title={gun.gun.note}
-													>
-														<span class="asterisk">*</span>
-													</span>
-												{/if}
+												<span
+													class="weapon-note"
+													title={gun.gun.note}
+												>
+													<span class="asterisk">*</span>
+												</span>
 											</div>
+										{/if}
 										</div>
 									{/each}
 								</div>

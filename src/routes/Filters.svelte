@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { createEventDispatcher } from "svelte"
 	import type { RadioOption, FilterParams } from "$lib/data/types"
-	import { SIDE, GUN_TYPE, GADGET, SCOPE, NONE, SPEED, ROLE } from "$lib/data/types"
+	import { SIDE, GUN_TYPE, GADGET, NONE, SPEED, ROLE } from "$lib/data/types"
 	import Radio from "$lib/components/Radio.svelte"
 	import { filter } from "$lib/util/filter"
 
@@ -46,22 +46,6 @@
 			{ label: "Hard breach charge", value: GADGET.hbreach },
 			{ label: "Impact EMP grenade", value: GADGET.emp },
 		],
-		scopesPrimary: [
-			{ label: "Any scope", value: NONE },
-			{ label: "1.0x", value: SCOPE.s1_0 },
-			{ label: "1.5x", value: SCOPE.s1_5 },
-			{ label: "2.0x", value: SCOPE.s2_0 },
-			{ label: "2.5x", value: SCOPE.s2_5 },
-			{ label: "3.0x", value: SCOPE.s3_0 },
-			{ label: "> 3.0x", value: SCOPE.s3_0plus },
-		],
-		scopesSecondary: [
-			{ label: "Any scope", value: NONE },
-			{ label: "1.0x", value: SCOPE.s1_0 },
-			{ label: "1.5x", value: SCOPE.s1_5 },
-			{ label: "2.0x", value: SCOPE.s2_0 },
-			{ label: "2.5x", value: SCOPE.s2_5 },
-		],
 		speeds: [
 			{ label: "Any", value: NONE },
 			{ label: "1-speed", value: SPEED.s1, secondaryLabel: "3-armor" },
@@ -85,8 +69,6 @@
 	const sections = [
 		{ selectedProp: "speed", sectionProp: "speeds" },
 		{ selectedProp: "role", sectionProp: "roles" },
-		{ selectedProp: "scopePrimaryGun", sectionProp: "scopesPrimary" },
-		{ selectedProp: "scopeSecondaryGun", sectionProp: "scopesSecondary" },
 		{ selectedProp: "side", sectionProp: "sides" },
 		{ selectedProp: "gadget", sectionProp: "gadgets" },
 		{ selectedProp: "gunTypeSecondary", sectionProp: "gunTypesSecondary" },
@@ -99,8 +81,6 @@
 	let gunTypePrimary: GUN_TYPE
 	let gunTypeSecondary: GUN_TYPE
 	let gadget: GADGET
-	let scopePrimaryGun: SCOPE
-	let scopeSecondaryGun: SCOPE
 	let speed: SPEED
 	let role: ROLE
 
@@ -116,8 +96,6 @@
 						gunTypePrimary,
 						gunTypeSecondary,
 						speed,
-						scopePrimaryGun,
-						scopeSecondaryGun,
 						role,
 					},
 					{ [s.selectedProp]: filterSections[s.sectionProp][i].value },
@@ -133,8 +111,6 @@
 		gunTypePrimary,
 		gunTypeSecondary,
 		gadget,
-		scopePrimaryGun,
-		scopeSecondaryGun,
 		speed,
 		role,
 	})
@@ -184,14 +160,6 @@
 			/>
 		</div>
 
-		<span class="connector" />
-		<div class="options">
-			<Radio
-				name="scope_primary"
-				options={filterSections.scopesPrimary}
-				bind:selected={scopePrimaryGun}
-			/>
-		</div>
 	</div>
 
 	<div class="filter">
@@ -201,15 +169,6 @@
 				name="secondary_gun"
 				options={filterSections.gunTypesSecondary}
 				bind:selected={gunTypeSecondary}
-			/>
-		</div>
-
-		<span class="connector" />
-		<div class="options">
-			<Radio
-				name="scope_secondary"
-				options={filterSections.scopesSecondary}
-				bind:selected={scopeSecondaryGun}
 			/>
 		</div>
 	</div>
