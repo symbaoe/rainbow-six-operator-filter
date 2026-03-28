@@ -4,8 +4,8 @@
 	import IconExternalLink from "$lib/components/IconExternalLink.svelte"
 
 	const season = {
-		link: "https://www.ubisoft.com/en-us/game/rainbow-six/siege/news-updates/1BZt0t9asNHvdTBHU9OUGZ/y8s4-designers-notes",
-		name: "Y8S4",
+		link: "https://www.ubisoft.com/en-us/game/rainbow-six/siege/news-updates/5fWCjoCU8toUJiBdMSj0UA/y11s1-designers-notes",
+		name: "Y11S1",
 	}
 </script>
 
