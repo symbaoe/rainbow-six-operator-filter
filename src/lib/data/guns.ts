@@ -126,7 +126,7 @@ export const guns: { [name: string]: Gun } = {
 	pmr90a2: { name: "PMR90A2", type: GUN_TYPE.smg },
 	tacit45: { name: "TACIT .45", type: GUN_TYPE.pistol },
 	glaive12: { name: "Glaive-12", type: GUN_TYPE.shotgun },
-	reaperMk2: { name: "Reaper MK2", type: GUN_TYPE.shotgun },
+	reaperMk2: { name: "Reaper MK2", type: GUN_TYPE.mpistol },
 	_44vendetta: { name: ".44 Vendetta", type: GUN_TYPE.pistol },
 	pcx33: { name: "PCX-33", type: GUN_TYPE.rifle },
 }
