@@ -54,7 +54,7 @@ export const guns: { [name: string]: Gun } = {
 	pmm: { name: "PMM", type: GUN_TYPE.pistol },
 	gsh18: { name: "GSH-18", type: GUN_TYPE.pistol },
 	p12: { name: "P12", type: GUN_TYPE.pistol },
-	mmk19mm: { name: "MMK19mm", type: GUN_TYPE.pistol },
+	mk19mm: { name: "Mk1 9mm", type: GUN_TYPE.pistol },
 	d50: { name: "D-50", type: GUN_TYPE.pistol },
 	prb92: { name: "PRB92", type: GUN_TYPE.pistol },
 	luison: { name: "Luison", type: GUN_TYPE.pistol },
@@ -129,4 +129,5 @@ export const guns: { [name: string]: Gun } = {
 	reaperMk2: { name: "Reaper MK2", type: GUN_TYPE.mpistol },
 	_44vendetta: { name: ".44 Vendetta", type: GUN_TYPE.pistol },
 	pcx33: { name: "PCX-33", type: GUN_TYPE.rifle },
+	handcannon: { name: "Hand Cannon", type: GUN_TYPE.pistol },
 }

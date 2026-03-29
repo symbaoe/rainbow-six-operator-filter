@@ -147,8 +147,7 @@ export const operators: Operator[] = [
 			{ gun: guns.lmge },
 		],
 		gunsSecondary: [
-			{ gun: guns.mmk19mm },
-			{ gun: guns.ita12s },
+			{ gun: guns.mk19mm }, //
 		],
 		gadgets: [GADGET.smoke, GADGET.stun],
 	},
@@ -223,6 +222,7 @@ export const operators: Operator[] = [
 		gunsPrimary: [
 			{ gun: guns.ar33 },
 			{ gun: guns.sr25 },
+			{ gun: guns.t95lsw },
 		],
 		gunsSecondary: [
 			{ gun: guns.gsh18 }, //
@@ -242,6 +242,7 @@ export const operators: Operator[] = [
 		gunsSecondary: [
 			{ gun: guns._57usg },
 			{ gun: guns.gonne6 },
+			{ gun: guns.handcannon },
 		],
 		gadgets: [GADGET.hbreach, GADGET.claymore],
 	},
@@ -271,10 +272,11 @@ export const operators: Operator[] = [
 			{ gun: guns.g36c },
 		],
 		gunsSecondary: [
-			{ gun: guns.mmk19mm },
+			{ gun: guns.mk19mm },
 			{ gun: guns.gonne6 },
+			{ gun: guns.handcannon },
 		],
-		gadgets: [GADGET.stun, GADGET.smoke],
+		gadgets: [GADGET.emp, GADGET.smoke],
 	},
 	{
 		uri: "kali",
@@ -290,7 +292,7 @@ export const operators: Operator[] = [
 			{ gun: guns.p226mk25 },
 			{ gun: guns.c75auto },
 		],
-		gadgets: [GADGET.sbreach, GADGET.claymore],
+		gadgets: [GADGET.sbreach, GADGET.claymore, GADGET.smoke],
 	},
 	{
 		uri: "amaru",
@@ -306,6 +308,7 @@ export const operators: Operator[] = [
 			{ gun: guns.ita12s },
 			{ gun: guns.gonne6 },
 			{ gun: guns.smg11 },
+			{ gun: guns.handcannon },
 		],
 		gadgets: [GADGET.stun, GADGET.hbreach],
 	},
@@ -318,6 +321,7 @@ export const operators: Operator[] = [
 		gunsPrimary: [
 			{ gun: guns.fmg9 },
 			{ gun: guns.six12sd },
+			{ gun: guns.pmr90a2 },
 		],
 		gunsSecondary: [
 			{ gun: guns.d50 },
@@ -333,7 +337,7 @@ export const operators: Operator[] = [
 		speed: SPEED.s1,
 		gunsPrimary: [
 			{ gun: guns.f90 },
-			{ gun: guns.m249 },
+			{ gun: guns.m249saw },
 		],
 		gunsSecondary: [
 			{ gun: guns.supershorty },
@@ -368,9 +372,11 @@ export const operators: Operator[] = [
 			{ gun: guns.ar1550 },
 		],
 		gunsSecondary: [
-			{ gun: guns._1911tacops }, //
+			{ gun: guns._1911tacops },
+			{ gun: guns.c75auto },
+			{ gun: guns.reaperMk2 },
 		],
-		gadgets: [GADGET.stun, GADGET.claymore],
+		gadgets: [GADGET.claymore, GADGET.smoke, GADGET.stun, GADGET.grenade],
 	},
 	{
 		uri: "lion",
@@ -420,6 +426,7 @@ export const operators: Operator[] = [
 			{ gun: guns.smg12 },
 			{ gun: guns.c75auto },
 			{ gun: guns.gonne6 },
+			{ gun: guns.handcannon },
 		],
 		gadgets: [GADGET.smoke, GADGET.stun, GADGET.emp],
 	},
@@ -436,7 +443,7 @@ export const operators: Operator[] = [
 		gunsSecondary: [
 			{ gun: guns.rg15 }, //
 		],
-		gadgets: [GADGET.sbreach, GADGET.claymore],
+		gadgets: [GADGET.claymore, GADGET.hbreach],
 	},
 	{
 		uri: "ying",
@@ -449,7 +456,8 @@ export const operators: Operator[] = [
 			{ gun: guns.six12 },
 		],
 		gunsSecondary: [
-			{ gun: guns.q929 }, //
+			{ gun: guns.q929 },
+			{ gun: guns.reaperMk2 },
 		],
 		gadgets: [GADGET.hbreach, GADGET.smoke],
 	},
@@ -479,12 +487,13 @@ export const operators: Operator[] = [
 		gunsPrimary: [
 			{ gun: guns.supernova },
 			{ gun: guns.type89 },
+			{ gun: guns.pmr90a2 },
 		],
 		gunsSecondary: [
 			{ gun: guns.bearing9 },
 			{ gun: guns.p229 },
 		],
-		gadgets: [GADGET.stun, GADGET.sbreach],
+		gadgets: [GADGET.sbreach, GADGET.stun, GADGET.claymore],
 	},
 	{
 		uri: "capitao",
@@ -495,10 +504,12 @@ export const operators: Operator[] = [
 		gunsPrimary: [
 			{ gun: guns.para308 },
 			{ gun: guns.m249 },
+			{ gun: guns.pmr90a2 },
 		],
 		gunsSecondary: [
 			{ gun: guns.prb92 },
 			{ gun: guns.gonne6 },
+			{ gun: guns.handcannon },
 		],
 		gadgets: [GADGET.claymore, GADGET.hbreach, GADGET.emp],
 	},
@@ -512,10 +523,8 @@ export const operators: Operator[] = [
 			{ gun: guns.mk17cqb },
 			{ gun: guns.sr25 },
 		],
-		gunsSecondary: [
-			{ gun: guns.d50 }, //
-		],
-		gadgets: [GADGET.claymore, GADGET.stun, GADGET.grenade],
+		gunsSecondary: [],
+		gadgets: [GADGET.claymore, GADGET.grenade],
 	},
 	{
 		uri: "buck",
@@ -528,10 +537,9 @@ export const operators: Operator[] = [
 			{ gun: guns.camrs },
 		],
 		gunsSecondary: [
-			{ gun: guns.mmk19mm },
-			{ gun: guns.gonne6 },
+			{ gun: guns.mk19mm }, //
 		],
-		gadgets: [GADGET.hbreach, GADGET.stun],
+		gadgets: [GADGET.stun, GADGET.claymore],
 	},
 	{
 		uri: "sledge",
@@ -544,7 +552,8 @@ export const operators: Operator[] = [
 			{ gun: guns.m590a1 },
 		],
 		gunsSecondary: [
-			{ gun: guns.p226mk25 }, //
+			{ gun: guns.p226mk25 },
+			{ gun: guns.reaperMk2 },
 		],
 		gadgets: [GADGET.grenade, GADGET.stun, GADGET.emp],
 	},
@@ -558,6 +567,7 @@ export const operators: Operator[] = [
 			{ gun: guns.l85a2 },
 			{ gun: guns.ar33 },
 			{ gun: guns.m590a1 },
+			{ gun: guns.pmr90a2 },
 		],
 		gunsSecondary: [
 			{ gun: guns.p226mk25 }, //
@@ -593,6 +603,7 @@ export const operators: Operator[] = [
 		gunsSecondary: [
 			{ gun: guns.m45meusoc },
 			{ gun: guns._57usg },
+			{ gun: guns.ita12s },
 		],
 		gadgets: [GADGET.smoke, GADGET.stun],
 	},
@@ -667,7 +678,6 @@ export const operators: Operator[] = [
 		gunsPrimary: [
 			{ gun: guns.ak12 },
 			{ gun: guns._6p41 },
-			{ gun: guns.shield },
 		],
 		gunsSecondary: [
 			{ gun: guns.pmm },
@@ -688,6 +698,7 @@ export const operators: Operator[] = [
 			{ gun: guns.bearing9 },
 			{ gun: guns.gonne6 },
 			{ gun: guns.pmm },
+			{ gun: guns.handcannon },
 		],
 		gadgets: [GADGET.smoke, GADGET.grenade, GADGET.claymore],
 	},
@@ -702,10 +713,9 @@ export const operators: Operator[] = [
 			{ gun: guns.sasg12 },
 		],
 		gunsSecondary: [
-			{ gun: guns._57usg },
-			{ gun: guns.bailiff },
+			{ gun: guns._57usg }, //
 		],
-		gadgets: [GADGET.barbwire, GADGET.bpcamera],
+		gadgets: [GADGET.bpcamera, GADGET.obsblocker],
 	},
 	{
 		uri: "solis",
@@ -720,7 +730,7 @@ export const operators: Operator[] = [
 		gunsSecondary: [
 			{ gun: guns.smg11 }, //
 		],
-		gadgets: [GADGET.impact, GADGET.bpcamera],
+		gadgets: [GADGET.bpcamera, GADGET.proxalarm],
 	},
 	{
 		uri: "azami",
@@ -766,8 +776,9 @@ export const operators: Operator[] = [
 		gunsSecondary: [
 			{ gun: guns.bearing9 },
 			{ gun: guns.q929 },
+			{ gun: guns.ita12s },
 		],
-		gadgets: [GADGET.barbwire, GADGET.bpcamera],
+		gadgets: [GADGET.barbwire, GADGET.bpcamera, GADGET.dshield],
 	},
 	{
 		uri: "aruni",
@@ -795,7 +806,8 @@ export const operators: Operator[] = [
 			{ gun: guns.super90 },
 		],
 		gunsSecondary: [
-			{ gun: guns.rg15 }, //
+			{ gun: guns.rg15 },
+			{ gun: guns.ita12s },
 		],
 		gadgets: [GADGET.impact, GADGET.bpcamera],
 	},
@@ -812,6 +824,7 @@ export const operators: Operator[] = [
 		gunsSecondary: [
 			{ gun: guns.bailiff },
 			{ gun: guns.usp40 },
+			{ gun: guns.reaperMk2 },
 		],
 		gadgets: [GADGET.barbwire, GADGET.proxalarm],
 	},
@@ -823,11 +836,12 @@ export const operators: Operator[] = [
 		speed: SPEED.s2,
 		gunsPrimary: [
 			{ gun: guns.auga2 },
-			{ gun: guns.mp5 },
+			{ gun: guns.mp5k },
 		],
 		gunsSecondary: [
 			{ gun: guns.keratos357 },
 			{ gun: guns.p12 },
+			{ gun: guns.supershorty },
 		],
 		gadgets: [GADGET.proxalarm, GADGET.impact],
 	},
@@ -873,9 +887,10 @@ export const operators: Operator[] = [
 			{ gun: guns.commando9 },
 		],
 		gunsSecondary: [
-			{ gun: guns.sdp9mm }, //
+			{ gun: guns.sdp9mm },
+			{ gun: guns.supershorty },
 		],
-		gadgets: [GADGET.barbwire, GADGET.nitro],
+		gadgets: [GADGET.barbwire, GADGET.nitro, GADGET.impact],
 	},
 	{
 		uri: "kaid",
@@ -907,7 +922,7 @@ export const operators: Operator[] = [
 			{ gun: guns.spsmg9 },
 			{ gun: guns.p10c },
 		],
-		gadgets: [GADGET.barbwire, GADGET.impact, GADGET.dshield],
+		gadgets: [GADGET.barbwire, GADGET.impact],
 	},
 	{
 		uri: "maestro",
@@ -970,7 +985,7 @@ export const operators: Operator[] = [
 		gunsSecondary: [
 			{ gun: guns.rg15 }, //
 		],
-		gadgets: [GADGET.barbwire, GADGET.dshield, GADGET.obsblocker],
+		gadgets: [GADGET.barbwire, GADGET.dshield, GADGET.impact],
 	},
 	{
 		uri: "lesion",
@@ -980,13 +995,13 @@ export const operators: Operator[] = [
 		speed: SPEED.s2,
 		gunsPrimary: [
 			{ gun: guns.t5smg },
-			{ gun: guns.six12 },
+			{ gun: guns.six12sd },
 		],
 		gunsSecondary: [
 			{ gun: guns.supershorty },
 			{ gun: guns.q929 },
 		],
-		gadgets: [GADGET.impact, GADGET.bpcamera],
+		gadgets: [GADGET.obsblocker, GADGET.bpcamera],
 	},
 	{
 		uri: "mira",
@@ -1028,7 +1043,7 @@ export const operators: Operator[] = [
 		speed: SPEED.s3,
 		gunsPrimary: [
 			{ gun: guns.m12 },
-			{ gun: guns.spas12 },
+			{ gun: guns.spas15 },
 		],
 		gunsSecondary: [
 			{ gun: guns.luison }, //
@@ -1062,7 +1077,7 @@ export const operators: Operator[] = [
 		],
 		gunsSecondary: [
 			{ gun: guns.ita12s },
-			{ gun: guns.mmk19mm },
+			{ gun: guns.mk19mm },
 		],
 		gadgets: [GADGET.bpcamera, GADGET.dshield],
 	},
@@ -1073,7 +1088,7 @@ export const operators: Operator[] = [
 		side: SIDE.defense,
 		speed: SPEED.s1,
 		gunsPrimary: [
-			{ gun: guns.mp5 },
+			{ gun: guns.mp5k },
 			{ gun: guns.m590a1 },
 		],
 		gunsSecondary: [
@@ -1128,6 +1143,7 @@ export const operators: Operator[] = [
 		gunsSecondary: [
 			{ gun: guns.m45meusoc },
 			{ gun: guns._57usg },
+			{ gun: guns.reaperMk2 },
 		],
 		gadgets: [GADGET.dshield, GADGET.obsblocker, GADGET.nitro],
 	},
@@ -1163,6 +1179,7 @@ export const operators: Operator[] = [
 		gunsSecondary: [
 			{ gun: guns.p9 },
 			{ gun: guns.lfp586 },
+			{ gun: guns.reaperMk2 },
 		],
 		gadgets: [GADGET.proxalarm, GADGET.impact, GADGET.obsblocker],
 	},
@@ -1227,6 +1244,6 @@ export const operators: Operator[] = [
 			{ gun: guns.pmm },
 			{ gun: guns.gsh18 },
 		],
-		gadgets: [GADGET.impact, GADGET.nitro],
+		gadgets: [GADGET.barbwire, GADGET.bpcamera],
 	},
 ]
